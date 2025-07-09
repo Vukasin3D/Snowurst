@@ -1,105 +1,78 @@
-# Wurst Client v7
+# Snowurst
 
-![Wurst Client logo](https://img.wimods.net/github.com/Wurst-Imperium/Wurst7?to=https://wurst.wiki/_media/logo/wurst_758x192.webp)
+![GitHub last commit](https://img.shields.io/github/last-commit/Vukasin3D/Snowurst)
+![License](https://img.shields.io/github/license/Vukasin3D/Snowurst)
+![Minecraft Version](https://img.shields.io/badge/Minecraft-1.21.7-green?style=flat&logo=minecraft)
+![Requires](https://img.shields.io/badge/Requires-Fabric%20API-blue?style=flat&logo=curseforge)
 
-- **Downloads:** [https://www.wurstclient.net/download/](https://go.wimods.net/from/github.com/Wurst-Imperium/Wurst7?to=https%3A%2F%2Fwww.wurstclient.net%2Fdownload%2F%3Futm_source%3DGitHub%26utm_medium%3DWurst7%2Brepo)
+Snowurst is a fork of the popular Wurst Client, focusing on creating a cleaner, more performant, and aesthetically pleasing user experience.
 
-- **Installation guide:** [https://www.wurstclient.net/tutorials/how-to-install/](https://go.wimods.net/from/github.com/Wurst-Imperium/Wurst7?to=https%3A%2F%2Fwww.wurstclient.net%2Ftutorials%2Fhow-to-install%2F%3Futm_source%3DGitHub%26utm_medium%3DWurst7%2Brepo)
+This project began as a learning endeavor into Minecraft mod development and has evolved into a full-fledged personalization of the Wurst client, bringing new themes, features, and quality-of-life improvements.
 
-- **Feature list:** [https://www.wurstclient.net/](https://go.wimods.net/from/github.com/Wurst-Imperium/Wurst7?to=https%3A%2F%2Fwww.wurstclient.net%2F%3Futm_source%3DGitHub%26utm_medium%3DWurst7%2Brepo)
+## ✨ Key Features
 
-- **Wiki:** [https://wurst.wiki/](https://go.wimods.net/from/github.com/Wurst-Imperium/Wurst7?to=https%3A%2F%2Fwurst.wiki%2F%3Futm_source%3DGitHub%26utm_medium%3DWurst7%2Brepo)
+* **New Visual Themes:** Features the default "Snowurst" (white) and "DarkUI" themes for a more modern interface. (RainbowUI is unchanged)
+* **Streamlined Focus:** Removes non-essential features from the original client to focus on the most important and useful modules.
+* **Open Source:** Inherits the original GPL-3.0 license, ensuring the project remains open and collaborative.
 
-- **Forum:** [https://wurstforum.net/](https://go.wimods.net/from/github.com/Wurst-Imperium/Wurst7?to=https%3A%2F%2Fwurstforum.net%2F%3Futm_source%3DGitHub%26utm_medium%3DWurst7%2Brepo)	
+---
 
-- **Twitter/X:** [https://x.com/Wurst_Imperium](https://go.wimods.net/from/github.com/Wurst-Imperium/Wurst7?to=https://x.com/Wurst_Imperium)
+## 🚀 Installation
 
-- **YouTube:** [https://www.youtube.com/@Alexander01998](https://go.wimods.net/from/github.com/Wurst-Imperium/Wurst7?to=https://www.youtube.com/@Alexander01998)
+Snowurst can be installed just like any other Fabric mod.
 
-- **Donations/Perks:** [https://ko-fi.com/wurst](https://go.wimods.net/from/github.com/Wurst-Imperium/Wurst7?to=https://ko-fi.com/wurst)
+1.  **Install Fabric:** Download and run the [Fabric installer](https://fabricmc.net/use/installer/) for Minecraft version **1.21.7**.
+2.  **Add the Mods:** Go to the [**Releases**](https://github.com/Vukasin3D/Snowurst/releases) section of this repository and download the latest Snowurst `.jar` file.
+3.  Place the Snowurst `.jar` file and the [**Fabric API**](https://www.curseforge.com/minecraft/mc-mods/fabric-api) `.jar` file into your `mods` folder.
 
-## Installation
+> [!NOTE]
+> You must own a licensed copy of Minecraft: Java Edition to use Snowurst.
 
-Wurst 7 can be installed just like any other Fabric mod. Here are the basic installation steps:
+---
 
-1. Run the Fabric installer.
-2. Add the Wurst Client and Fabric API to your mods folder.
-
-Please refer to the [full Wurst 7 installation guide](https://go.wimods.net/from/github.com/Wurst-Imperium/Wurst7?to=https%3A%2F%2Fwww.wurstclient.net%2Ftutorials%2Fhow-to-install%2F%3Futm_source%3DGitHub%26utm_medium%3DWurst7%2Brepo) if you need more detailed instructions or run into any problems.
-
-Also, this should be obvious, but you do need to have a licensed copy of Minecraft Java Edition in order to use Wurst. Wurst is a cheat client, not a pirate client.
-
-## Development Setup
+## 🛠️ Development Setup
 
 > [!IMPORTANT]
-> Make sure you have [Java Development Kit 21](https://go.wimods.net/from/github.com/Wurst-Imperium/Wurst7?to=https%3A%2F%2Fadoptium.net%2F%3Fvariant%3Dopenjdk21%26jvmVariant%3Dhotspot) installed. It won't work with other versions.
+> Make sure you have **Java Development Kit (JDK) 21** installed. Other versions will not work.
 
-### Development using Eclipse
+### 1. Clone the Repository
 
-1. Clone the repository:
-
-   ```pwsh
-   git clone https://github.com/Wurst-Imperium/Wurst7.git
-   cd Wurst7
-   ```
-
-2. Generate the sources:
-
-   ```pwsh
-   ./gradlew genSources eclipse
-   ```
-
-3. In Eclipse, go to `Import...` > `Existing Projects into Workspace` and select this project.
-
-4. **Optional:** Right-click on the project and select `Properties` > `Java Code Style`. Then under `Clean Up`, `Code Templates`, `Formatter`, import the respective files in the `codestyle` folder.
-
-### Development using VSCode / Cursor
-
-> [!TIP]
-> You'll probably want to install the [Extension Pack for Java](https://go.wimods.net/from/github.com/Wurst-Imperium/Wurst7?to=https%3A%2F%2Fmarketplace.visualstudio.com%2Fitems%3FitemName%3Dvscjava.vscode-java-pack) to make development easier.
-
-1. Clone the repository:
-
-   ```pwsh
-   git clone https://github.com/Wurst-Imperium/Wurst7.git
-   cd Wurst7
-   ```
-
-2. Generate the sources:
-
-   ```pwsh
-   ./gradlew genSources vscode
-   ```
-
-3. Open the `Wurst7` folder in VSCode / Cursor.
-
-4. **Optional:** In the VSCode settings, set `java.format.settings.url` to `https://raw.githubusercontent.com/Wurst-Imperium/Wurst7/master/codestyle/formatter.xml` and `java.format.settings.profile` to `Wurst-Imperium`.
-
-### Development using IntelliJ IDEA
-
-I don't use or recommend IntelliJ, but the commands to run would be:
-
-```pwsh
-git clone https://github.com/Wurst-Imperium/Wurst7.git
-cd Wurst7
-./gradlew genSources idea
+```bash
+git clone [https://github.com/Vukasin3D/Snowurst.git](https://github.com/Vukasin3D/Snowurst.git)
+cd Snowurst
 ```
 
+### 2. Generate IDE Files
 
-## Contributing
+Run the command corresponding to your preferred IDE:
 
-Please always [contact me](https://go.wimods.net/from/github.com/Wurst-Imperium/Wurst7?to=https%3A%2F%2Fwww.wurstclient.net%2Fcontact%2F%3Futm_source%3DGitHub%26utm_medium%3DWurst7%2Brepo) before opening a Pull Request. Any method works. That way we can discuss your ideas early and avoid wasting your time working on unwanted features or having to make lots of changes later.
+* **For VSCode / Cursor:**
+    ```bash
+    gradlew genSources vscode
+    ```
+* **For Eclipse:**
+    ```bash
+    gradlew genSources eclipse
+    ```
+* **For IntelliJ IDEA:**
+    ```bash
+    gradlew genSources idea
+    ```
 
-We also have [contributing guidelines](https://go.wimods.net/from/github.com/Wurst-Imperium/Wurst7?to=https://github.com/Wurst-Imperium/Wurst7/blob/master/CONTRIBUTING.md) to help you get started.
+### 3. Open the Project
 
-## Translations
+Open the `Snowurst` folder in your IDE and wait for it to import the project and download the dependencies. You are now ready to start modding!
 
-To enable translations in-game, go to Wurst Options > Translations > ON.
+---
 
-The preferred way to submit translations is through a Pull Request here on GitHub. The translation files are located in [this folder](https://go.wimods.net/from/github.com/Wurst-Imperium/Wurst7?to=https://github.com/Wurst-Imperium/Wurst7/tree/master/src/main/resources/assets/wurst/translations).
+## 🤝 Contributing
 
-Names of features (hacks/commands/etc.) should always be kept in English. This ensures that everyone can use the same commands, keybinds, etc. regardless of their language setting. It also makes it easier to communicate with someone who uses Wurst in a different language.
+At the moment, Snowurst is a personal project, but ideas and suggestions are always welcome! If you find a bug or have an idea for a new feature, feel free to open an [**Issue**](https://github.com/Vukasin3D/Snowurst/issues).
 
-## License
+---
 
-This code is licensed under the GNU General Public License v3. **You can only use this code in open-source clients that you release under the same license! Using it in closed-source/proprietary clients is not allowed!**
+## 📜 License
+
+This code is licensed under the **GNU General Public License v3.0**, inherited from the original Wurst Client project.
+
+This means you are free to use, modify, and distribute this code, as long as any derivative project is also open-source and released under the same license (GPL-3.0). Using this code in closed-source or proprietary clients is **not allowed**.
