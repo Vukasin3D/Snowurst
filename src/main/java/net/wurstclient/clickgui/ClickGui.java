@@ -584,22 +584,36 @@ public final class ClickGui
 		for(int i = 0; i < windowLayers; i++)
 			context.state.goDownLayer();
 	}
-	
+
+
+
 	public void updateColors()
 	{
 		ClickGuiHack clickGui = WURST.getHax().clickGuiHack;
-		
 		opacity = clickGui.getOpacity();
 		ttOpacity = clickGui.getTooltipOpacity();
-		bgColor = clickGui.getBackgroundColor();
-		txtColor = clickGui.getTextColor();
 		maxHeight = clickGui.getMaxHeight();
 		maxSettingsHeight = clickGui.getMaxSettingsHeight();
-		
-		if(WurstClient.INSTANCE.getHax().rainbowUiHack.isEnabled())
+
+
+		if (WURST.getHax().darkUiHack.isEnabled())
+		{
+
+			bgColor = new float[]{0.08f, 0.08f, 0.1f};
+			acColor = new float[]{0.75f, 0.75f, 0.8f};
+			txtColor = 0xFFCCCCCC;
+
+		} else {
+
+			bgColor = new float[]{0.12f, 0.12f, 0.15f};
+			acColor = new float[]{0.95f, 0.95f, 1.0f};
+			txtColor = 0xFFFFFFFF;
+		}
+
+		if(WURST.getHax().rainbowUiHack.isEnabled())
+		{
 			acColor = RenderUtils.getRainbowColor();
-		else
-			acColor = clickGui.getAccentColor();
+		}
 	}
 	
 	private void renderWindow(DrawContext context, Window window, int mouseX,

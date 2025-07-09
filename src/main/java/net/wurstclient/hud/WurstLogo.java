@@ -52,7 +52,7 @@ public final class WurstLogo
 	
 	private String getVersionString()
 	{
-		String version = "v" + WurstClient.VERSION;
+		String version = "Snowurst v" + WurstClient.VERSION;
 		version += " MC" + WurstClient.MC_VERSION;
 		
 		if(WURST.getUpdater().isOutdated())

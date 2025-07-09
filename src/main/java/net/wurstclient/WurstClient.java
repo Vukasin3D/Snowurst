@@ -50,7 +50,7 @@ public enum WurstClient
 	public static MinecraftClient MC;
 	public static IMinecraftClient IMC;
 	
-	public static final String VERSION = "7.49";
+	public static final String VERSION = "1.0";
 	public static final String MC_VERSION = "1.21.7";
 	
 	private PlausibleAnalytics plausible;
@@ -78,7 +78,7 @@ public enum WurstClient
 	
 	public void initialize()
 	{
-		System.out.println("Starting Wurst Client...");
+		System.out.println("Injecting Snowurst...");
 		
 		MC = MinecraftClient.getInstance();
 		IMC = (IMinecraftClient)MC;

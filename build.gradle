@@ -137,6 +137,8 @@ jar {
 	exclude("intentionally_untranslated.json")
 }
 
+project.gradle.startParameter.excludedTaskNames.add("spotlessCheck")
+
 import com.diffplug.spotless.generic.LicenseHeaderStep
 spotless {
 	lineEndings = "WINDOWS"
