@@ -78,3 +78,4 @@ This code is licensed under the **GNU General Public License v3.0**, inherited f
 This means you are free to use, modify, and distribute this code, as long as any derivative project is also open-source and released under the same license (GPL-3.0). Using this code in closed-source or proprietary clients is **not allowed**.
 
 (i kept everything wurst had so i can reference it more :D)
+(nevermind)
