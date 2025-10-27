@@ -113,7 +113,7 @@ jobs:
     # Needed because the screenshot gallery won't be created on pull requests.
     # Also useful if Imgur uploads fail.
     - name: Upload Test Screenshots.zip artifact
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       if: always()
       with:
         name: Test Screenshots
