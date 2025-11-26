@@ -110,7 +110,7 @@ jobs:
     - name: Trigger website update
       id: website_dispatch
       if: ${{ inputs.update_website }}
-      uses: codex-/return-dispatch@v2
+      uses: codex-/return-dispatch@v3
       with:
         token: ${{ secrets.WURSTCLIENT_NET_PUBLISH_TOKEN }}
         owner: Wurst-Imperium
