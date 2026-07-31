@@ -129,7 +129,7 @@ jobs:
 
     - name: Trigger CI on the new branch
       id: ci_dispatch
-      uses: codex-/return-dispatch@v2
+      uses: codex-/return-dispatch@v3.0.2
       with:
         token: ${{ github.token }}
         owner: Wurst-Imperium
