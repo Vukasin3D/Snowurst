@@ -121,7 +121,7 @@ jobs:
 
     - name: Wait for website update to finish (run ${{ steps.website_dispatch.outputs.run_id }})
       if: ${{ inputs.update_website }}
-      uses: codex-/await-remote-run@v1
+      uses: codex-/await-remote-run@v2
       with:
         token: ${{ secrets.WURSTCLIENT_NET_PUBLISH_TOKEN }}
         owner: Wurst-Imperium

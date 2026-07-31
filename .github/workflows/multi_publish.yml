@@ -89,7 +89,7 @@ jobs:
         workflow: publish.yml
         workflow_inputs: ${{ steps.publish_inputs.outputs.json }}
     - name: Wait for publish workflow to finish (run ${{ steps.publish_dispatch.outputs.run_id }})
-      uses: codex-/await-remote-run@v1
+      uses: codex-/await-remote-run@v2
       with:
         token: ${{ github.token }}
         owner: Wurst-Imperium
@@ -125,7 +125,7 @@ jobs:
         workflow: announce_wurst_update.yml
         workflow_inputs: ${{ steps.announce_inputs.outputs.json }}
     - name: Wait for announce workflow to finish (run ${{ steps.announce_dispatch.outputs.run_id }})
-      uses: codex-/await-remote-run@v1
+      uses: codex-/await-remote-run@v2
       with:
         token: ${{ secrets.WURSTCLIENT_NET_PUBLISH_TOKEN }}
         owner: Wurst-Imperium
@@ -162,7 +162,7 @@ jobs:
         workflow: announce_wurst_ports.yml
         workflow_inputs: ${{ steps.announce_inputs.outputs.json }}
     - name: Wait for announce workflow to finish (run ${{ steps.announce_dispatch.outputs.run_id }})
-      uses: codex-/await-remote-run@v1
+      uses: codex-/await-remote-run@v2
       with:
         token: ${{ secrets.WURSTCLIENT_NET_PUBLISH_TOKEN }}
         owner: Wurst-Imperium
